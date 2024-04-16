@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter } from 'react-router-dom';
 import ErrorPage from './commons/pages/Error';
+
 import './i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -14,11 +15,11 @@ root.render(
     <ErrorPage>
       <HelmetProvider>
         <BrowserRouter>
-         <App />
+          <App />
         </BrowserRouter>
       </HelmetProvider>
     </ErrorPage>
-  </React.StrictMode>
+  </React.StrictMode>,
 );
 
 // If you want to start measuring performance in your app, pass a function
